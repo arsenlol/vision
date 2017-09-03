@@ -1,0 +1,140 @@
+/* < Проекты главный экран > */
+.projects-main-wrap { width:100vw; height:100vh; max-width:100%; position: relative; overflow:hidden;}
+.projects-main-carousel {width:100%; height:100%;}
+.project-main .main-wrap {padding-top:25vh;}
+.project-main img { position: absolute; top: 50%; min-height: 100%; display: block; left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); -moz-transform: translate(-50%, -50%);    min-width: 100%;}
+.project-main-content {position: relative; z-index: 1; height:100vh; background: rgba(0,0,0,.7);}
+.slogan-wrap { line-height:40vh; text-align: center; }
+.slogan-wrap article { line-height:36px; vertical-align:middle; display: inline-block; padding:40px 20px;background:url(../img/focus-frame.png) 0 0/100% 100%;}
+.slogan-wrap article h2 {display:block; text-transform: uppercase; font-size: 33px; color:#fff; line-height: 35px; text-align: center; max-width:500px; font-weight: 100; letter-spacing: 5px; margin:0 auto;}
+.slogan-wrap article { line-height:36px; vertical-align:middle; display: inline-block;}
+.slogan-wrap article .divider { width:150px; margin:20px auto; height:1px; background-color:#f7941e; display: block;}
+.slogan-wrap article .description {font-size: 18px; line-height: 20px; text-align: center; display: block; color:#fff; max-width:500px; margin:0 auto;}
+.project-slogan {text-align: center;}
+.project-slogan a {display:inline-block; margin:30px 0; padding:5px 25px; position:relative; border:4px solid #f7941e; color:#fff; text-transform: uppercase; font-weight: 700; letter-spacing: 3px;}
+.project-slogan a:before {content:''; position:absolute; width:0; height:0; right:0; bottom:0; transition:.5s; background:#f7941e; z-index:-1;}
+.project-slogan a:hover:before {width:100%; height:100%;}
+.project-slogan .scroll-block {padding-top:3vh; height:auto;}
+.projects-main-nav { position: absolute; height: 0; width: 98%; z-index: 1; top: 45vh; left:1%;}
+/*.projects-main-nav .slick-arrow:before{ content:''; position: absolute; color:#fff; font-size: 20px; text-transform: uppercase; letter-spacing: 3px;}*/
+.projects-main-nav .slick-arrow {transition: .3s; position: relative; cursor: pointer; transform: rotate(0deg); border: none; width: auto; height: auto; line-height: 35px;}
+/*.projects-main-nav .slick-arrow .slick-nav-block {}*/
+.projects-main-nav .slick-arrow.slick-nav-block.prev {float:left;}
+.projects-main-nav .slick-arrow.slick-nav-block.next {float:right;}
+.projects-main-nav .slick-arrow.slick-nav-block.prev div {float:left;}
+.projects-main-nav .slick-arrow.slick-nav-block.next div {float:right;}
+.projects-main-nav .slick-arrow.slick-nav-block span {line-height: 40px; display: inline-block; color:#fff; text-transform: uppercase; font-size: 18px; letter-spacing: 2px; margin:0 10px;}
+.projects-main-nav .slick-arrow.slick-nav-block div {transition: .3s; transform: rotate(45deg); border-style: solid; border-radius: 50%; width: 40px; height: 40px; border-width: 2px; line-height: 35px;text-align: center;}
+
+/* < Список проектов > */
+#projects-list { position:relative; padding:150px 0; min-height:1000px;}
+#projects-list-decor { position: absolute; top:0px; right: 1320px; width: 600px; overflow: hidden; z-index:0;}
+#projects-list-decor-right .float-el{ float:right; width:200px; height:200px;}
+#projects-list-decor-right { position: absolute; top:500px; left: 1420px; width: 400px; overflow: hidden; z-index:0;}
+#projects-list-decor .float-el { float: left; width: 150px; height: 150px;}
+#projects-list-decor-bottom { position: absolute; bottom:0px; right: 1170px; width: 750px; overflow: hidden; z-index:0;}
+#projects-list-decor-bottom .float-el { float: left; width: 250px; height: 250px;}
+#projects-list-decor-col { position: absolute; top:0px; height: 0; left:1150px; width: 110px; z-index:0; background-color: #f7941e; transition-duration: 1s;}
+#projects-list-decor-col.animate { height: 455px;}
+.projects-list-filter-wrap {display: inline-block; position: relative;}
+#projects-list-filter {display: inline-block; position: relative; z-index:1; width:580px;}
+#projects-list-filter span {cursor:pointer; display: inline-block; text-transform: uppercase; padding:5px 5% 5px 0; color:#000;}
+#projects-list-filter span:last-child {padding:5px 3% 5px 0;}
+#projects-list-filter span.active {font-weight: 700;}
+.projects-list-filter-decor { position: absolute; right:0; top:0; width:2000px; height:100%; background-color: #f7941e; z-index:0;}
+#projects-list-output {margin-top:50px;}
+.projects-list-output-wrap {display:flex; justify-content:space-between; flex-wrap:wrap;}
+#projects-list-output .project {width:48%; margin-bottom:20px; padding:20px 0; vertical-align:top; flex-shrink:1;}
+#projects-list-output .project figure { position:relative; height:240px; width:100%; overflow:hidden; margin-bottom:20px;}
+#projects-list-output .project figure img { position:absolute; width:100%; height:100%; ;}
+#projects-list-output .project figure h3 {margin:0; font-size: 18px; font-weight: 400; position:absolute; top:0; left:0; bottom:0; right:0; width:100%; height:100%;
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,000000+100&0+0,1+100 */
+background: -moz-linear-gradient(top,  rgba(255,255,255,0) 0%, rgba(0,0,0,.7) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(0,0,0,.7) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(255,255,255,0) 0%,rgba(0,0,0,.7) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+ }
+#projects-list-output .project figure h3 span {display: inline-block; color:#fff; position:absolute; bottom:0; left:0; padding:20px;}
+#projects-list-output .project figcaption {margin-bottom:20px;}
+#projects-list-output .project a {margin:0; font-size: 14px; letter-spacing: 2px;}
+#projects-list-output .project:nth-child(5n) {position:relative; width:100%; display: block; height:490px; flex-grow:1; margin-bottom:60px;}
+#projects-list-output .project:nth-child(5n) figure { position:absolute; top:0; width:100%; bottom:0; left:0; height:100%; right:0;}
+#projects-list-output .project:nth-child(5n) figure h3 {padding:0;
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,ffffff+75&0.7+0,0+75 */
+background: -moz-linear-gradient(-45deg,  rgba(0,0,0,0.7) 0%, rgba(255,255,255,0) 75%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg,  rgba(0,0,0,0.7) 0%,rgba(255,255,255,0) 75%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg,  rgba(0,0,0,0.7) 0%,rgba(255,255,255,0) 75%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3000000', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+#projects-list-output .project:nth-child(5n) figure h3 span { position:absolute; top:35px; width:100%; max-width:400px; bottom:auto; left:auto; height:100%; right:30px; text-align: right; font-size: 24px;}
+#projects-list-output .project:nth-child(5n) figcaption {position:absolute; top:30px; left:30px; width:200px; height:100%; color:#fff;}
+#projects-list-output .project:nth-child(5n) a {position:absolute; bottom:35px; right:30px;}
+
+#projects-list-output .project {transition-duration:1s; opacity:0; position:relative; top:40px; transition-delay:0s;}
+#projects-list-output .project.animate {opacity:1; top:0;}
+#projects-list-output .project:not(:nth-child(5n-2)):not(:nth-child(5n-4)) {transition-delay:.5s;}
+
+.projects-list-nav {text-align: center; margin:20px auto 0; width:250px;}
+.projects-list-nav .prev {float:left;}
+.projects-list-nav .next {float:right;}
+.projects-list-nav > a {position: relative; width:25px; height:25px; display: block;}
+.projects-list-nav > a:before, .projects-list-nav > a:after {content:''; background-color: #bbb; position:absolute; top:50%; margin-top:-5px; margin-left:-5px; left:50%; display:block; width:13px; height:3px; border-radius:2px;}
+.projects-list-nav > a:hover:before, .projects-list-nav > a:hover:after {background-color: #f7941e;}
+.projects-list-nav .next:before, .projects-list-nav .prev:after {transform:rotate(45deg);}
+.projects-list-nav .next:after, .projects-list-nav .prev:before {transform:rotate(-45deg);}
+.projects-list-nav a:before {margin-top: -6px;}
+.projects-list-nav a:after {margin-top: 1px;}
+.projects-list-nav .pages {display: inline-block; font-size: 20px;}
+.projects-list-nav .pages a {color:#000; display: inline-block; margin:0 5px; width:20px; text-align: center; line-height: 25px;}
+.projects-list-nav .pages a:hover, .projects-list-nav .pages a:active {color:#f7941e;}
+
+/* ============================================= */
+/* | - = - = - = - Media Styles - = - = - = -  | */
+/* ============================================= */
+
+@media screen and (max-width: 1199px) {
+  .project-main-content, .projects-main-wrap {height:calc( 100vh - 45px );}
+  .projects-main-nav .slick-arrow.slick-nav-block span {display: none;}
+  .project-main .main-wrap {padding-top: 18vh;}
+}
+
+@media screen and (max-width: 991px) {
+  #projects-list {padding:70px 0;}
+  .projects-list-filter-decor {right: -600px;}
+  .slogan-wrap article .description, .slogan-wrap article .divider, .projects-main-nav.dark {display: none;}
+  .slogan-wrap article h2 {max-width:400px;}
+  .project-slogan .scroll-block {padding-top: 0;}
+  #projects-list-output .project:nth-child(5n) {width:48%; margin-bottom:20px; padding:20px 0; vertical-align:top; flex-shrink:1; flex-grow:0; height:auto;}
+  #projects-list-output .project:nth-child(5n) figure { position:relative; height:240px; width:100%; overflow:hidden; margin-bottom:20px;}
+  #projects-list-output .project:nth-child(5n) figure img { position:absolute; width:100%; height:100%; ;}
+  #projects-list-output .project:nth-child(5n) figure h3 {margin:0; font-size: 18px; font-weight: 400; position:absolute; top:0; left:0; bottom:0; right:0; width:100%; height:100%;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,000000+100&0+0,1+100 */
+  background: -moz-linear-gradient(top,  rgba(255,255,255,0) 0%, rgba(0,0,0,.7) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(0,0,0,.7) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  rgba(255,255,255,0) 0%,rgba(0,0,0,.7) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+   }
+  #projects-list-output .project:nth-child(5n) figure h3 span {display: inline-block; font-size:18px; top:auto; height:auto; text-align: left;color:#fff; position:absolute; bottom:0; left:0; padding:20px;}
+  #projects-list-output .project:nth-child(5n) figcaption {margin-bottom:20px; position:static; width:auto; color:#000; height:auto;}
+  #projects-list-output .project:nth-child(5n) a {margin:0; font-size: 14px; letter-spacing: 2px; position:static;}
+  #projects-list-output .project:not(:nth-child(5n-2)):not(:nth-child(5n-4)) {transition-delay:0s;}
+  #projects-list-output .project:nth-child(2n) {transition-delay:.5s;}
+}
+
+@media screen and (max-width: 768px) {
+
+  .slogan-wrap article h2 {font-size: 20px; padding: 0 20px; letter-spacing: 1px; line-height: 25px;}
+  .project-slogan a { margin: 20px 0; border: 2px solid #f7941e; letter-spacing: 1px;}
+  .slogan-wrap {line-height: 30vh;}
+  .projects-list-filter-wrap {display: block;}
+  #projects-list-filter {width:100%;}
+  #projects-list-filter span {display: block; padding: 5px; text-align: center;}
+  .projects-list-filter-decor {display: none;}
+  .filter-option {position: relative;}
+  .filter-option.active:before {content: ''; position: absolute; top:0; left:-15px; width:calc( 100% + 30px ); height:100%; background-color: #f7941e; z-index:-1;}
+
+}
+
+@media screen and (max-width: 600px) {
+  #projects-list-output .project,#projects-list-output .project:nth-child(5n) {width:100%;}
+}

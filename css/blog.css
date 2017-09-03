@@ -1,0 +1,200 @@
+
+.blog-top-wrap { position: relative;  }
+.blog-top-decor { position:absolute; top:0; left:70%; width:760px; height:570px;} 
+.blog-top-decor .float-el { width:190px; height:190px; float:right; } 
+.blog-top-decor-col { position: absolute; top:0px; height: 0; left:250px; width: 110px; z-index:0; background-color: #f7941e; transition-duration: 1s; }
+.blog-top-decor-col.animate { height: 470px; }
+
+.blog-top-content {padding-top:70px;}
+#blog-top-title {display: inline-block; position: relative; margin: 0 0 70px 200px;}
+#blog-top-title .decor {position: absolute; right:100px; width:1px; order:4; height:3px; top:37px;}
+#blog-top-title .decor i {position:absolute; left:0; height:3px; border-radius:2px; width:1500px; background-color: transparent; }
+#blog-top-title .decor b {position:absolute; right:0; height:3px; background-color: #000; transition-duration: 1s; width:0%; transition-duration: 1s;}
+#blog-top-title .decor.animate b { width:100%;}
+#blog-top-title span {display: block; text-transform: uppercase;}
+#blog-top-title .big-letters {line-height: initial; font-weight: 900;}
+#blog-top-title .normal-letters {background-color: transparent; font-weight: 700;}
+.blog-top-category-title { text-align: right; }
+.blog-top-category-title h2 {text-transform: uppercase; display: inline-block; font-size: 18px; font-weight: 700; letter-spacing: 3px; margin:0;}
+.blog-top-carousel-wrap {margin:40px 20px; position: relative;}
+.blog-top-carousel {box-shadow: 9px 9px 73px rgba(0,0,0,.3);}
+.blog-top-carousel-el img {width:100%; height:auto;}
+.blog-top-carousel-nav-arrows {position: absolute; top:50%; margin-top:-40px; left:0%; width:100%; z-index:1;}
+.blog-top-carousel-nav-arrows .slick-next{right:-100px;}
+.blog-top-carousel-nav-arrows .slick-prev{left:-100px;}
+.blog-top-carousel-nav-dots {}
+
+/*.blog-cats-wrap {position: absolute; left:0; }*/
+.blog-cats-wrap {position:relative; left:0; font-size: 0px; height:40px; border:1px solid #f7941e; margin-top:50px;}
+.blog-cats-wrap ul, .blog-subcats-wrap ul {list-style: none; margin:0; padding:0 0 0 15px;}
+.blog-cats-wrap li, .blog-subcats-wrap li {display: inline-block;}
+.blog-cats-title {line-height: 40px; position: relative; top:-1px;}
+.blog-cats-title span {display: inline-block; position: relative; font-weight: 700; padding-right:15px;}
+.blog-cats-title span i {position:absolute; right:0; width:1000px; height:100%; background-color: #f7941e; z-index:-1; }
+.blog-cats-title, .blog-cats-list { vertical-align:top; display: inline-block;  font-size: 12px;  text-transform: uppercase;  letter-spacing: 2px;}
+.blog-cats-list { line-height:38px; overflow-x:auto; height:40px; width:calc( 100% - 98px );}
+.blog-cats-list ul {width:850px;}
+ 
+.blog-cats-list span {color:#f7941e; cursor:pointer; padding-right:10px; font-weight: 700;}
+.blog-cats-list .active span {color:#000;}
+.blog-cats-title strong {position: relative;}
+.blog-cats-title i {position: absolute;}
+.blog-subcats-wrap {margin:20px 0;}
+.blog-subcats-wrap li:not(:last-child) span:after { content:' /'; pointer-events:none; }
+.blog-subcats-wrap li span {text-transform: uppercase; font-size: 12px; letter-spacing: 1px; font-weight: 700; cursor:pointer;}
+.blog-subcats-wrap li.active span {color:#f7941e;}
+/*.blog-subcats-wrap ul {margin:0;}*/
+
+
+/* < Список проектов > */
+#blog-list { position:relative; }
+.blog-list-wrap {position: relative; padding-bottom:50px;}
+#blog-list-decor-right .float-el{ float:right; width:200px; height:200px;}
+#blog-list-decor-right { position: absolute; top:500px; right: -350px; width: 600px; overflow: hidden; z-index:0;}
+#blog-list-decor { position: absolute; bottom:50px; right: -350px; width: 534px; overflow: hidden; z-index:0;}
+#blog-list-decor .float-el { float: right; width: 133.3px; height: 133.3px;}
+#blog-list-decor-bottom { position: absolute; top:1150px; left: -350px; width: 750px; overflow: hidden; z-index:0;}
+#blog-list-decor-bottom .float-el { float: left; width: 250px; height: 250px;}
+#blog-list-decor-col { position: absolute; top:0px; height: 0; left:1150px; width: 110px; z-index:0; background-color: #f7941e; transition-duration: 1s;}
+#blog-list-decor-col.animate { height: 455px;}
+.blog-list-filter-wrap {display: inline-block; position: relative;}
+#blog-list-filter {display: inline-block; position: relative; z-index:1; width:580px;}
+#blog-list-filter span {cursor:pointer; display: inline-block; text-transform: uppercase; padding:5px 5% 5px 0; color:#000;}
+#blog-list-filter span:last-child {padding:5px 3% 5px 0;}
+#blog-list-filter span.active {font-weight: 700;}
+.blog-list-filter-decor { position: absolute; right:0; top:0; width:2000px; height:100%; background-color: #f7941e; z-index:0;}
+.blog-list-output-wrap {display:flex; justify-content:space-between; flex-wrap:wrap;}
+#blog-list-output .blog-item {width:48%; margin-bottom:20px; padding:20px 0; vertical-align:top; flex-shrink:1;}
+#blog-list-output .blog-item figure { position:relative; height:240px; width:100%; overflow:hidden; margin-bottom:20px;}
+#blog-list-output .blog-item figure img { position:absolute; width:100%; height:100%; ;}
+#blog-list-output .blog-item figure h3 {margin:0; font-size: 18px; font-weight: 400; position:absolute; top:0; left:0; bottom:0; right:0; width:100%; height:100%;
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,000000+100&0+0,1+100 */
+background: -moz-linear-gradient(top,  rgba(255,255,255,0) 0%, rgba(0,0,0,.7) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(0,0,0,.7) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(255,255,255,0) 0%,rgba(0,0,0,.7) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+ }
+#blog-list-output .blog-item figure h3 span {display: inline-block; color:#fff; position:absolute; bottom:0; left:0; padding:20px;}
+#blog-list-output .blog-item figcaption {margin-bottom:20px;}
+#blog-list-output .blog-item a {margin:0; font-size: 14px; letter-spacing: 2px;}
+#blog-list-output .blog-item:nth-child(5n) {position:relative; width:100%; display: block; height:490px; flex-grow:1; margin-bottom:60px;}
+#blog-list-output .blog-item:nth-child(5n) figure { position:absolute; top:0; width:100%; bottom:0; left:0; height:100%; right:0;}
+#blog-list-output .blog-item:nth-child(5n) figure h3 {padding:0;
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,ffffff+75&0.7+0,0+75 */
+background: -moz-linear-gradient(-45deg,  rgba(0,0,0,0.7) 0%, rgba(255,255,255,0) 75%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg,  rgba(0,0,0,0.7) 0%,rgba(255,255,255,0) 75%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg,  rgba(0,0,0,0.7) 0%,rgba(255,255,255,0) 75%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3000000', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+#blog-list-output .blog-item:nth-child(5n) figure h3 span { position:absolute; top:35px; width:100%; max-width:400px; bottom:auto; left:auto; height:100%; right:30px; text-align: right; font-size: 24px;}
+#blog-list-output .blog-item:nth-child(5n) figcaption {position:absolute; top:30px; left:30px; width:200px; height:100%; color:#fff;}
+#blog-list-output .blog-item:nth-child(5n) a {position:absolute; bottom:35px; right:30px;}
+
+#blog-list-output .blog-item {transition-duration:1s; opacity:0; position:relative; top:40px; transition-delay:0s;}
+#blog-list-output .blog-item.animate {opacity:1; top:0;}
+#blog-list-output .blog-item:not(:nth-child(5n-2)):not(:nth-child(5n-4)) {transition-delay:.5s;}
+
+.blog-list-nav {text-align: center; margin:50px auto 0; width:250px;}
+.blog-list-nav .prev {float:left;}
+.blog-list-nav .next {float:right;}
+.blog-list-nav > a {position: relative; width:25px; height:25px; display: block;}
+.blog-list-nav > a:before, .blog-list-nav > a:after {content:''; background-color: #bbb; position:absolute; top:50%; margin-top:-5px; margin-left:-5px; left:50%; display:block; width:13px; height:3px; border-radius:2px;}
+.blog-list-nav > a:hover:before, .blog-list-nav > a:hover:after {background-color: #f7941e;}
+.blog-list-nav .next:before, .blog-list-nav .prev:after {transform:rotate(45deg);}
+.blog-list-nav .next:after, .blog-list-nav .prev:before {transform:rotate(-45deg);}
+.blog-list-nav a:before {margin-top: -6px;}
+.blog-list-nav a:after {margin-top: 1px;}
+.blog-list-nav .pages {display: inline-block; font-size: 20px;}
+.blog-list-nav .pages a {color:#000; display: inline-block; margin:0 5px; width:20px; text-align: center; line-height: 25px;}
+.blog-list-nav .pages a:hover, .blog-list-nav .pages a:active {color:#f7941e;}
+#blog-form {padding-bottom:100px;}
+#blog-form .submit-container { margin-top:40px; }
+#blog-form h3 {font-size: 30px; letter-spacing: 8px; text-transform: uppercase; font-weight: 700; text-align: center; margin-bottom:50px;}
+.blog-follow-us {margin-top:150px;}
+.blog-follow-us h4 {font-size: 18px; font-weight: 700; text-align: center; text-transform: uppercase; letter-spacing: 5px; }
+.blog-follow-us-links {margin-top:70px; text-align: center;}
+.blog-follow-us-links span {margin:20px;}
+.blog-follow-us-links a img {filter:grayscale(1); transition:.3s;}
+.blog-follow-us-links a:hover img {filter:grayscale(0);}
+
+
+/* ============================================= */
+/* | - = - = - = - Media Styles - = - = - = -  | */
+/* ============================================= */
+
+@media screen and (max-width: 1200px) {
+	.blog-cats-wrap {left:-15px;}
+	.blog-top-decor-col {left:140px;}
+	.blog-top-decor { transform:scale(.6); transform-origin:left top; }
+}
+
+@media screen and (max-width: 991px) {
+	.blog-cats-wrap:after {content:''; height:100%; width:40px; pointer-events: none; right:0; top:0; z-index:1; position:absolute;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&0+0,1+100 */
+	background: -moz-linear-gradient(left,  rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 */
+	} 
+	.blog-cats-wrap:before {content:''; height:100%; width:40px; pointer-events: none; left:98px; top:0; z-index:1; position:absolute;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&0+0,1+100 */
+	background: -moz-linear-gradient(right,  rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(right,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to left,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 */
+	}
+	.blog-cats-wrap {left:0px;}
+	.blog-top-carousel {width:90%; margin:auto;}
+	.blog-top-carousel-nav-arrows .slick-next{right:-20px;}
+	.blog-top-carousel-nav-arrows .slick-prev{left:-20px;}
+	.blog-top-decor-col {left:0px;}
+
+	#blog-list-output .blog-item:nth-child(5n) {width:48%; margin-bottom:20px; padding:20px 0; vertical-align:top; flex-shrink:1; flex-grow:0; height:auto;}
+	#blog-list-output .blog-item:nth-child(5n) figure { position:relative; height:240px; width:100%; overflow:hidden; margin-bottom:20px;}
+	#blog-list-output .blog-item:nth-child(5n) figure img { position:absolute; width:100%; height:100%; ;}
+	#blog-list-output .blog-item:nth-child(5n) figure h3 {margin:0; font-size: 18px; font-weight: 400; position:absolute; top:0; left:0; bottom:0; right:0; width:100%; height:100%;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,000000+100&0+0,1+100 */
+	background: -moz-linear-gradient(top,  rgba(255,255,255,0) 0%, rgba(0,0,0,.7) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(0,0,0,.7) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  rgba(255,255,255,0) 0%,rgba(0,0,0,.7) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+	 }
+	#blog-list-output .blog-item:nth-child(5n) figure h3 span {display: inline-block; font-size:18px; top:auto; height:auto; text-align: left;color:#fff; position:absolute; bottom:0; left:0; padding:20px;}
+	#blog-list-output .blog-item:nth-child(5n) figcaption {margin-bottom:20px; position:static; width:auto; color:#000; height:auto;}
+	#blog-list-output .blog-item:nth-child(5n) a {margin:0; font-size: 14px; letter-spacing: 2px; position:static;}
+	#blog-list-output .blog-item:not(:nth-child(5n-2)):not(:nth-child(5n-4)) {transition-delay:0s;}
+	#blog-list-output .blog-item:nth-child(2n) {transition-delay:.5s;}
+}
+
+@media screen and (max-width: 768px) {
+	#blog-top-title .decor { right:50px; }
+	#blog-top-title {margin:0 0 50px 30px;}
+	#blog-top-title .big-letters {font-size: 75px;}
+	.blog-top-category-title {text-align: center;}
+	.blog-top-carousel-wrap  {margin:0 0 20px; }
+	.blog-top-carousel {width:100%; }
+	.blog-top-decor-col {width:80px; left:-10px;}
+	.blog-top-carousel-nav-arrows {width:150px; margin:0 auto;}
+	.blog-top-carousel-nav-arrows .slick-next{right:0px;}
+	.blog-top-carousel-nav-arrows .slick-prev{left:0px;}
+	.blog-top-carousel-nav-arrows {position:relative; height:40px; margin:30px auto; width:150px; top:auto; left:auto;}
+	.blog-cats-title {display: none;}
+	.blog-cats-list {display: block; width:100%;}
+	.blog-cats-wrap {border-left:none; border-right:0;}
+	.blog-cats-wrap:before {left:0;}
+	.blog-subcats li {display: block; text-align: center;}
+	.blog-subcats-wrap li:not(:last-child) span:after { content:''; pointer-events:none; }
+	.blog-subcats-wrap ul {padding:0;}
+	#blog-form h3 {font-size: 22px; letter-spacing: 5px;}
+	#blog-form form  {padding:0 15px;}
+	#blog-form form .input-container {max-width:600px;}
+	#blog-form form .submit-container input {font-size: 14px;}
+	.blog-follow-us {margin-top:70px;}
+	.blog-follow-us h4 {font-size: 14px; letter-spacing: 1px;}
+	.blog-follow-us-links {margin-top:30px}
+	.blog-follow-us-links span {margin:10px;}
+}
+
+@media screen and (max-width: 600px) {
+  #blog-list-output .blog-item,#blog-list-output .blog-item:nth-child(5n) {width:100%;}
+}

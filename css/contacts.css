@@ -1,0 +1,250 @@
+
+.contacts-socials a img {filter:grayscale(1); transition:.3s;}
+.contacts-socials a:hover img {filter:grayscale(0);}
+
+
+
+#contacts-top { position: relative;  }
+.contacts-title-wrap {position: relative;}
+#contacts-decor-left { position: absolute; top: 200px; left: -240px; width: 480px; overflow: hidden; z-index:-1;}
+#contacts-decor-left .float-el { float: left; width: 120px; height: 120px;}
+.contacts-title-wrap .decor-col { position: absolute; top:0px; height: 0; left:250px; width: 110px; z-index:0; background-color: #f7941e; transition-duration: 1s; }
+.contacts-title-wrap .decor-col.animate { height: 470px; }
+#map-wrap { position: relative; height:600px; margin-bottom:50px; z-index:2;}
+#map {height:600px; top:0; position:absolute; width:85%; right:5px; box-shadow:-9px -9px 73px 9px rgba(0,0,0,.3);}
+
+#contacts-title {display: inline-block; position: relative; margin: 120px 0 70px 200px;}
+#contacts-title .decor {position: absolute; right:-50px; width:1px; order:4; height:3px; top:37px;}
+#contacts-title .decor i {position:absolute; left:0; height:3px; border-radius:2px; width:1500px; background-color: transparent; }
+#contacts-title .decor b {position:absolute; right:0; height:3px; background-color: #000; transition-duration: 1s; width:0%; transition-duration: 1s;}
+#contacts-title .decor.animate b { width:100%;}
+#contacts-title span {display: block; text-transform: uppercase;}
+#contacts-title .big-letters {line-height: initial; font-weight: 900;}
+#contacts-title .normal-letters {background-color: transparent; font-weight: 700; text-align: right;}
+
+#contacts-text {position: relative; z-index:1;}
+#contacts-text .decor-col { position: absolute; top:-100px; height: 0; left:-25px; width: 27px; z-index:-1; background-color: #f7941e; transition-duration: 1s; }
+#contacts-text .decor-col.animate { height: 150px; }
+.contacts-block {display: inline-block; vertical-align: top; margin-right:40px;}
+.contacts-block a {color:#000;}
+.contacts-block>div {padding-left:55px; line-height: 30px;}
+.contacts-address span {display: block;}
+.contacts-address {background:url(../img/marker.png) 20px 8px/15px 28px no-repeat;}
+.contacts-phone {background:url(../img/call-dark.png) 20px 8px/16px 16px no-repeat;}
+.contacts-mail {background:url(../img/mail-dark.png) 17px 9px/21px 13px no-repeat;}
+.contacts-socials {display:flex; justify-content:space-between; margin-top:25px;}
+#contacts-text h3 {margin:100px auto 80px; font-size: 36px; text-transform: uppercase; font-weight: 700; letter-spacing: 10px;}
+#contacts-form {background-color:#f7941e; }
+.contacts-form-wrap {position: relative; text-align: center; padding-bottom:30px;}
+.contacts-form-wrap .decor-left {position:absolute; top:0; left:-400px; width:400px; overflow:hidden; }
+.contacts-form-wrap .decor-left .float-el {float:left; width:200px; height:200px;}
+.contacts-form-wrap .decor-right {position:absolute; top:-400px; right:-400px; width:800px; overflow:hidden; }
+.contacts-form-wrap .decor-right .float-el {float:right; width:200px; height:200px;}
+.inputs-row {display:flex; justify-content:space-between; width:90%; max-width:900px; margin: 30px auto 0;}
+.input-wrap {padding:20px 15px 15px; background:#fff; text-align: center; display: inline-block;}
+.textarea-wrap { padding: 15px; background-color: #fff; width: 70%; max-width: 590px; }
+.textarea-wrap textarea { border:0; outline:none; width:100%; height:140px;}
+.input-wrap .input-container {margin:0 20px; display: inline-block;}
+.submit-wrap { align-self: flex-end; }
+
+
+
+
+
+@keyframes flicker {
+  0% { opacity: 0.24079; }
+  5% { opacity: 0.87771; }
+  10% { opacity: 0.91253; }
+  15% { opacity: 0.34232; }
+  20% { opacity: 0.54046; }
+  25% { opacity: 0.44821; }
+  30% { opacity: 0.58157; }
+  35% { opacity: 0.93219; }
+  40% { opacity: 0.16115; }
+  45% { opacity: 0.53875; }
+  50% { opacity: 0.55534; }
+  55% { opacity: 0.74569; }
+  60% { opacity: 0.46059; }
+  65% { opacity: 0.24618; }
+  70% { opacity: 0.77769; }
+  75% { opacity: 0.22897; }
+  80% { opacity: 0.43477; }
+  85% { opacity: 0.26409; }
+  90% { opacity: 0.29927; }
+  95% { opacity: 0.27202; }
+  100% { opacity: 0.92059; }
+}
+
+.cont {
+  background: #121010;
+  width: 800px;
+  height: 600px;
+  margin-top: 10px;
+  position: relative;
+  overflow: hidden;
+  border: 2px solid #666;
+}
+.cont::after {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(18, 16, 16, 0.1);
+  opacity: 0;
+  z-index: 2;
+  pointer-events: none;
+}
+.cont::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+  z-index: 2;
+  background-size: 100% 2px, 3px 100%;
+  pointer-events: none;
+}
+
+#switch:checked ~ .cont::after {
+  animation: flicker 0.15s infinite;
+}
+
+@keyframes turn-on {
+  0% {
+    transform: scale(1, 0.8) translate3d(0, 0, 0);
+    -webkit-filter: brightness(30);
+    filter: brightness(30);
+    opacity: 1;
+  }
+  9% {
+    transform: scale(1, 0.8) translate3d(0, 100%, 0);
+  }
+  10% {
+    transform: scale(1, 0.8) translate3d(0, -100%, 0);
+    opacity: 1;
+  }
+  30% {
+    transform: scale(1.3, 0.6) translate3d(0, 100%, 0);
+    -webkit-filter: brightness(30);
+    filter: brightness(30);
+    opacity: 0;
+  }
+  35% {
+    transform: scale(1, 1) translate3d(0, 0, 0);
+    -webkit-filter: contrast(0) brightness(0);
+    filter: contrast(0) brightness(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1, 1) translate3d(0, 0, 0);
+    -webkit-filter: contrast(1) brightness(1.2) saturate(1.3);
+    filter: contrast(1) brightness(1.2) saturate(1.3);
+    opacity: 1;
+  }
+}
+@keyframes turn-off {
+  0% {
+    transform: scale(1, 1.3) translate3d(0, 0, 0);
+    -webkit-filter: brightness(1);
+    filter: brightness(1);
+    opacity: 1;
+  }
+  60% {
+    transform: scale(1.3, 0.001) translate3d(0, 0, 0);
+    -webkit-filter: brightness(10);
+    filter: brightness(10);
+  }
+  100% {
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    transform: scale(0, 0.0001) translate3d(0, 0, 0);
+    -webkit-filter: brightness(50);
+    filter: brightness(50);
+  }
+}
+
+.screen {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+#switch ~ .cont > .screen {
+  animation: turn-off 0.55s cubic-bezier(0.23, 1, 0.32, 1);
+  animation-fill-mode: forwards;
+}
+
+#switch:checked ~ .cont > .screen {
+  animation: turn-on 2s linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes overlay-anim {
+  0% {
+    visibility: hidden;
+  }
+  20% {
+    visibility: hidden;
+  }
+  21% {
+    visibility: visible;
+  }
+  100% {
+    visibility: hidden;
+  }
+}
+.overlay {
+  color: #00FF00;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 60px;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+#switch:checked ~ .cont .overlay {
+  animation: overlay-anim 5s linear;
+  animation-fill-mode: forwards;
+}
+
+
+
+
+/* ============================================= */
+/* | - = - = - = - Media Styles - = - = - = -  | */
+/* ============================================= */
+
+@media screen and (max-width: 1200px) {
+
+}
+
+@media screen and (max-width: 991px) {
+	#map {width:95%; height:400px;}
+	#map-wrap {height:400px;}
+	#contacts-title {margin: 50px 0 50px 0;}
+	.contacts-title-wrap .decor-col {left:20px;}
+	.input-wrap .input-container {display: block; max-width:none;}
+	.input-wrap {margin-bottom:10px; display: block; padding:15px 15px 10px;}
+	.inputs-row {display: block;}
+	.textarea-wrap {width:100%; max-width:none; margin:-20px 0 10px;}
+	.contacts-form-wrap .decor-left, .contacts-form-wrap .decor-right {display: none;}
+	#contacts-text h3 {text-align: center; margin: 30px auto 40px;}
+	.contacts-block {margin-bottom:20px; margin-right: 0px; display: block;}
+	.contacts-socials {display: inline-block;}
+	.contacts-socials span {display: inline-block; margin-right:5px;}
+}
+
+@media screen and (max-width: 768px) {
+	#contacts-text h3 {font-size: 30px; }
+	#contacts-text .decor-col {left:0; top:-70px;}
+	.contacts-title-wrap .decor-col {width:70px; left:0;}
+	#contacts-title {margin: 50px 0 50px 25px;}
+	#contacts-title .big-letters {font-size: 70px;}
+
+}

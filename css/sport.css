@@ -1,0 +1,332 @@
+
+/* < Спортивные объекты > */
+#sport-objects {overflow:hidden; position:relative; background:#fff; box-shadow:0 0 35px 35px #000;}
+#sport-objects-decor { position: absolute; top: 0px; right: 60%; width: 640px; overflow: hidden; z-index:0;}
+#sport-objects-decor-bg { position: absolute; top: 0px; left: 27%; width: 73%; z-index:0; background: #ebebeb url(../img/sport-objects-bg.png) 100px -70px no-repeat; height:93%;}
+#sport-objects-decor .float-el { float: left; width: 160px; height: 160px;}
+#sport-objects-col { position:absolute; top:-125px; width:145px; transition:1s; left:75px; height:0; background-color: #f7941e; z-index:0;}
+#sport-objects-col.animate { height:310px; }
+#sport-objects-wrap {position:relative; padding-top:120px; padding-bottom:100px;}
+#sport-objects-wrap .decor.line { position:absolute; bottom:0; transition:1s; right: 0px; width:0%; background-color: #000; height:3px; }
+#sport-objects-wrap .decor.line.animate { width:60%; }
+#sport-objects-content {margin:auto; text-align: right;}
+.sport-object {float: right; text-align: right;}
+#sport-object-title {position: relative; margin-bottom: 50px; font-weight: 700; text-transform: uppercase; text-align: right; z-index:0; margin-top:0;}
+#sport-object-title span { display: block;}
+#sport-object-title .decor {display: block; height:0; background-color:#f7941e; width:27px; transition:1s; position: absolute; top:50px; right:200px; z-index:-1;}
+#sport-object-title .decor.animate { height:130px;}
+#sport-object-title .normal-letters { background-color: transparent; margin-right:-5px; }
+#sport-object-title .big-letters { line-height: 110px; }
+.sport-objects-presentation {width:190px; position: relative; float:left;}
+.sport-objects-presentation figure {position: relative; text-align: left;}
+.sport-objects-presentation img {width:186px;height:186px; border:2px solid #fff;}
+.sport-objects-presentation p {text-transform: uppercase; display: block; font-size: 12px; padding:20px 0;}
+.sport-objects-presentation a {display: block; padding:5px 0; text-align: center; letter-spacing: 0; background-color: #000}
+.sport-objects-presentation a:hover { color:#000;}
+.sport-object-carousel-wrap {width:700px;}
+.sport-object-carousel { box-shadow:0 0 10px 3px rgba(0,0,0,.5); }
+.sport-object-carousel figure img {max-width:100%; width:100%; height:auto; min-height:100%; }
+
+/* < Для кого > */
+#sport-whom {background:#fff; position:relative; padding:80px 0 80px;}
+#sport-whom-title { transform:rotate(-90deg) translateX(-100px); display: inline-block;}
+#sport-whom-title span {display: block;}
+#sport-whom-title .normal-letters {background-color: transparent; padding-left:5px;}
+#sport-whom-title .decor {position: relative;}
+#sport-whom-title .decor b {display: block; height:25px; background-color:#f7941e; width:0px; transition:1s; position: absolute; top:11px; left:-40px; z-index:-1;}
+#sport-whom-title .decor.animate b { width:130px;}
+.sport-whom-block {text-align: center;margin-top:50px;}
+.sport-block-whom-el {display: inline-block; width:160px; margin:0 10px; vertical-align: top;}
+.sport-block-whom-el figure {background: url(../img/svg/focus-frame-square.svg) 0 0/100% 100% no-repeat}
+.sport-block-whom-el figure div { width: 160px; height: 160px; position: relative; -webkit-transform-style: preserve-3d; -webkit-transform-origin: 50% 75px; -webkit-transition: all 0.7s ease; transform-style: preserve-3d; transform-origin: 50% 75px; transition: all 0.7s ease; transform: translate3d(0, 0, 0); -webkit-transform: translate3d(0, 0, 0); transform-style: preserve-3d; -webkit-transform-style: preserve-3d;
+         backface-visibility: hidden; -webkit-backface-visibility: hidden;}
+.sport-block-whom-el figure:hover div { -webkit-transform: rotateY(-180deg); transform: rotateY(-180deg)}
+.sport-block-whom-el figure div img, figure div p { width: 160px; height: 160px; position: absolute; left: 0; -webkit-backface-visibility: hidden; backface-visibility: hidden; -webkit-transform: scale(.8); transform: scale(.8); }
+.sport-block-whom-el figure div p { background: #000; text-align: left; padding:0 15px; color: #fff; line-height: 160px; -webkit-transform: rotateY(180deg); transform: rotateY(180deg); }
+.sport-block-whom-el figure div p b { display: inline-block; vertical-align: middle; text-transform: uppercase; font-size: 12px; }
+.sport-block-whom-el figure div p span { line-height: 20px; display: block; color:#f7941e;}
+.sport-block-whom-el figcaption {text-transform: uppercase; font-weight: 700; text-align:left; font-size: 12px; padding-left:15px; margin-top:20px;}
+.sport-block-whom-el figcaption span {display: block;}
+
+/* < С нами вы получаете > */
+#sport-you {background:#fff; position:relative; margin-top:100px; position: relative;}
+#sport-you-decor { position: absolute; top: -40px; left: 75%; width: 600px; overflow: hidden; z-index:0;}
+#sport-you-decor .float-el { float: right; width: 200px; height: 200px;}
+#sport-you-title { display: inline-block; background: #fff; position: relative; padding-left:30px; margin-left:15%; margin-bottom:50px;}
+#sport-you-title span {display: block;}
+#sport-you-title .big-letters {display: inline-block; text-transform: uppercase;}
+#sport-you-title .normal-letters {background-color: transparent; padding-left:5px; display: inline-block; text-transform: uppercase; position: relative; margin-left:30px;}
+#sport-you-title .normal-letters strong {display: block; line-height:40px; position: relative; z-index:1;}
+#sport-you-title .decor b {display: block; height:0px; background-color:#f7941e; width:27px; transition:1s; position: absolute; bottom:-25px; right:80px; z-index:0;}
+#sport-you-title .decor.animate b { height:130px;}
+#sport-you-wrap .decor.line { position:absolute; top:50px; transition:1s; left: 0px; width:0%; background-color: #000; height:3px; }
+#sport-you-wrap .decor.line.animate { width:30%; }
+
+.sport-you-tabs-container {text-align: center;}
+.sport-you-tabs {display: inline-block;}
+.sport-you-tab {float:left; margin:20px 40px; vertical-align: top;}
+.sport-you-tabs-row:after {content:''; clear:both; display: table;}
+.sport-you-tab .element-3d>div {transition:.1s;position:relative;}
+.sport-you-tab:hover .element-3d>div {transition:.3s; transform:rotate3d(0, 1, 0, 0deg) !important;}
+.sport-you-tab div a { transition:.5s; transform:scale(.7); letter-spacing: 1px; font-weight: 700; line-height: 30px; opacity:0; height:135px; width:135px; display:block; padding:30px 10px; background:#f7941e; color:#fff; border-radius:50%; text-align: center;}
+.sport-you-tab div a span {text-transform: uppercase; color:#fff; font-size: 12px; line-height:20px; display: inline-block;}
+.sport-you-tab div i, .sport-you-tab div b { opacity:1; transform:scale(1);}
+.sport-you-tab:hover div b { opacity: 0; transform:scale(1.3); transition:.5s;}
+.sport-you-tab:hover div i { opacity: 0; transform:scale(1.3) translateZ(-20px) translateX(-40%) translateY(-40%); transition:.5s;}
+.sport-you-tab:hover div a { opacity: 1; transform:scale(1);}
+.sport-you-tab figure { cursor:pointer; 
+  -webkit-perspective: 500px;
+      -moz-perspective: 500px;
+      -ms-perspective: 500px;
+      -o-perspective: 500px;
+      perspective: 500px;}
+.sport-you-tab figure div {line-height:135px; text-align: center; height:135px; width:135px; position: relative; margin:auto; 
+  -moz-transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -moz-perspective: 400px;
+  -webkit-perspective: 400px;
+  -ms-perspective: 400px;
+  -o-perspective: 400px;
+  perspective: 400px;}
+.sport-you-tab figure div b {border-color:#f7941e; transition:.3s; box-shadow: -5px -5px 45px 10px rgba(255,255,255,.5), -5px -5px 45px 30px rgba(0,0,0,.1); height:100%; width:100%; 
+  border-style:solid; border-radius:50%; border-width:3px; position:absolute; top:0; left:0;}
+/*.sport-you-tab figure div b:hover { height:110%; width:110%; left:-5%; top:-5px; }*/
+.sport-you-tab figure div i { position: absolute; top:50%; left:50%; transition:.3s; -webkit-backface-visibility:hidden; backface-visibility:hidden;
+  -moz-transform: translateZ(-20px) translateX(-50%) translateY(-50%);
+  -webkit-transform: translateZ(-20px) translateX(-50%) translateY(-50%);
+  -o-transform: translateZ(-20px) translateX(-50%) translateY(-50%);
+  -ms-transform: translateZ(-20px) translateX(-50%) translateY(-50%);}
+.sport-you-tab figure div i {background-size: contain; background-position: center; background-repeat: no-repeat;} 
+.sport-you-tabs-row:nth-of-type(1) .sport-you-tab:nth-of-type(1) figure div i { background-image: url(../img/you-tab1.png); width:104px; height:103px;}
+.sport-you-tabs-row:nth-of-type(1) .sport-you-tab:nth-of-type(2) figure div i { background-image: url(../img/you-tab2.png); width:97px; height:97px;}
+.sport-you-tabs-row:nth-of-type(1) .sport-you-tab:nth-of-type(3) figure div i { background-image: url(../img/you-tab3.png); width:103px; height:74px;}
+.sport-you-tabs-row:nth-of-type(2) .sport-you-tab:nth-of-type(2) figure div i { background-image: url(../img/you-tab4.png); width:156px; height:126px;}
+.sport-you-tabs-row:nth-of-type(2) .sport-you-tab:nth-of-type(3) figure div i { background-image: url(../img/you-tab5.png); width:101px; height:89px;}
+.sport-you-tab-blocks {float:left; position:relative; width:300px; height:200px; margin-right: 30px;}
+.sport-you-tab-block {position: absolute; width:300px; height:200px; line-height: 200px; text-align: center; left:0; bottom:0; opacity:0; transition:1s;}
+.sport-you-tab-block.active {opacity:1;}
+.sport-you-tab-block img {max-width:100%; max-height:100%; vertical-align: middle;}
+.sport-you-tab figcaption {color:#6b6b6b; text-transform: uppercase; letter-spacing: 1px; font-weight: 700; margin-top:20px; text-align: center; font-size: 13px; display: block; width:150px;
+} 
+
+/* < Как результат ваш бизнес развивается > */
+#sport-business { margin-top:200px; position: relative; padding-bottom:100px;}
+/*#sport-business-decor { position: absolute; bottom: 0px; right:70%; width: 400px; overflow: hidden; z-index:0;}
+#sport-business-decor .float-el { float: left; width: 200px; height: 200px;}*/
+#sport-business-title { text-transform: uppercase; text-align: right; padding-right:15%;}
+#sport-business-title span {display: block;}
+#sport-business-title .normal-letters {background-color: transparent; line-height:40px; position: relative; margin-right:25%; font-weight: 700;}
+#sport-business-title .big-letters {line-height: 100px; letter-spacing: 40px; font-weight: 900; margin-right:-25px;}
+#sport-business-title .big-letters+.normal-letters { margin-right:0px;}
+/*#sport-business-title .normal-letters strong {display: block; line-height:40px; position: relative; z-index:1;}*/
+#sport-business-title .decor {display: block; height:0px; background-color:#f7941e; width:27px; transition:1s; position: absolute; top:-60px; right:100px; z-index:-1;}
+#sport-business-title .decor.animate { height:127px;}
+#sport-business-wrap .decor.line { position:absolute; top:40px; transition:1s; right: 0px; width:0%; background-color: #000; height:3px; }
+#sport-business-wrap .decor.line.animate { width:30%; }
+#sport-business-wrap .decor-bg-wrap {background: #ebebeb; position:absolute; width:60%; height:100%; top:0; bottom:0; right:40%; z-index:-1;}
+#sport-business-wrap .decor-bg {width:323px; height:255px; background:url(../img/bg-dotted.png) 0 0 no-repeat; top:250px; right:30%; position: absolute;}
+#sport-business-content {text-align: right;}
+#sport-business-content .toggles-wrap { margin-top:50px; margin-right:50px;}
+#business-graph-line {stroke-dashoffset: 354.443; stroke-dasharray: 354.443, 354.443; transition:2s;}
+#business-graph-arrow {stroke-dashoffset: 25.891; stroke-dasharray: 25.891, 25.891; transition:1s;}
+#business-graph-line.animate {stroke-dashoffset:0;}
+#business-graph-arrow.animate {stroke-dashoffset:0;}
+
+/* < Реализованные проекты > */
+#sport-projects {background:#fff; position:relative;}
+#sport-projects-decor { position: absolute; top: -200px; right: 70%; width: 600px; overflow: hidden; z-index:0;}
+#sport-projects-decor .float-el { float: left; width: 200px; height: 200px;}
+#sport-projects-wrap { padding-bottom:200px; position: relative; }
+#sport-projects-wrap .decor.line { position:absolute; top:0px; transition:1s; left: 0px; width:0%; background-color: #000; height:3px; }
+#sport-projects-wrap .decor-bottom.line { position:absolute; bottom:0px; transition:1s; right: 0px; width:0%; background-color: #000; height:3px; }
+#sport-projects-wrap .decor-bottom.line.animate { width:65%; }
+#sport-projects-wrap .decor.line.animate { width:65%; }
+#sport-projects-wrap .decor-bottom.line.animate { width:45%; }
+#sport-projects-wrap .decor.col { position:absolute; top:40%; transition:1s; left: 60%; width:110px; background-color: #f7941e; height:0;}
+#sport-projects-wrap .decor.col.animate { height:470px; }
+#sport-projects-title { transform:rotate(-90deg) translateY(-60px) translateX(-240px); display: inline-block;}
+#sport-projects-title span {display: block;}
+#sport-projects-title .normal-letters {background-color: transparent; padding-left:5px;}
+#sport-projects-title .big-letters { line-height: 100px;}
+#sport-projects-title .decor {position: relative;}
+#sport-projects-title .decor b {display: block; height:30px; background-color:#f7941e; width:0px; transition:1s; position: absolute; top:5px; right:-41px; z-index:-1;}
+#sport-projects-title .decor.animate b { width:130px;}
+.sport-projects-descriptions {margin-top:100px;}
+.sport-projects-description h3 {text-transform: uppercase; display: block; font-size: 20px; margin:0 0 20px 0;}
+.sport-projects-description h3 span {display: block;}
+.sport-projects-descriptions .slick-list {overflow: visible; }
+.sport-projects-description a:hover {color:#000;}
+.sport-projects-image {position: relative; opacity:1; -webkit-transform: scale(1); }
+.sport-projects-images { height:550px; width:950px;}
+.sport-projects-images>div {position:absolute; transform: translate3d(0, 0, 0); -webkit-transform: translate3d(0, 0, 0); transform-style: preserve-3d; -webkit-transform-style: preserve-3d;
+         backface-visibility: hidden; -webkit-backface-visibility: hidden; transition:.1s;}
+.sport-projects-image-2 { width:245px; text-align: center; padding:28px; background:url(../img/top-frame.png) 0 0 no-repeat; left:285px; top:0; z-index:0;}
+.sport-projects-image-1 { top:140px; left:100px;  z-index:2; width:846px; height:296px;}
+.sport-projects-image-3 { left:0; top:100px;  z-index:3; width:189px; height:154px;}
+.sport-projects-image-4 { top:400px; left:200px;  z-index:4; width:189px; height:154px;} 
+.sport-projects-image .picture img { height:155px; width:190px;}
+.sport-projects-image .picture.full img { height:auto; width:auto;}
+.sport-projects-nav {width: 120px; position: relative; top: -60px; left:0px;}
+
+/* < Мировой опыт > */
+#sport-exp {background:#fff; position: relative;}
+#sport-exp-title {position: relative; display: inline-block; margin: -15px 0 0 25%;}
+#sport-exp-title span {display: block;}
+#sport-exp-title .normal-letters { position: relative; background-color: transparent; font-weight: 700;}
+#sport-exp-title .big-letters { line-height: 100px; position: relative; margin-left:50px;}
+#sport-exp-title .decor {position: absolute; display: block; width:30px; background-color:#f7941e; height:0px; transition:1s; position: absolute; top:0; left:115px; z-index:0;}
+#sport-exp-title .decor.animate { height:130px;}
+.sport-exp-carousel {width:90%;margin:0 auto;}
+.sport-exp-el {margin:20px 0; padding:20px;}
+.sport-exp-el h4 {font-size: 16px; color:#58595b; height:35px; font-weight: 700;}
+.sport-exp-el figure {margin:20px 0 10px; text-align: center; height:155px; display: block;}
+.sport-exp-el figure img {width:100%; height:100%; transition: .2s;}
+.sport-exp-el figure:hover img {width:100%; height:100%;box-shadow: 0 -4px 29px rgba(0,0,0,0.4);}
+.sport-exp-el figcaption {margin-bottom:10px; height:130px; color:#58595b;}
+.sport-exp-el a:hover {color:#000;}
+.sport-exp-nav {height:0; position:absolute; top:50%; width:100%;}
+.sport-exp-nav .slick-next  {right:20px;}
+
+/* < F.A.Q. > */
+#sport-faq {background:#fff; position: relative; margin-top:100px; }
+#sport-faq-wrap {position: relative;}
+#sport-faq-wrap .decor-bg-left {background:#f7941e; position: absolute; top:0; bottom:0; left:0; width:45%;}
+#sport-faq-wrap .decor-bg-right {background:#ebebeb; position: absolute; top:30px; bottom:0; right:0; width:15%;}
+#sport-faq-wrap .decor.col {background:#fff; position: relative;}
+#sport-faq-wrap .decor.col.animate {background:#fff; position: relative;}
+#sport-faq-wrap .decor.line { position:absolute; top:80px; transition:1s; left: 0px; width:0%; background-color: #000; height:3px; }
+#sport-faq-wrap .decor.line.animate { width:50%; }
+#sport-faq-title {position: relative; display: inline-block; margin-top: 30px;}
+#sport-faq-title span {display: block;}
+#sport-faq-title .big-letters { line-height: 100px; position: relative; font-weight: 900; display: inline-block; z-index:1;}
+#sport-faq-title .decor {position: absolute; display: block; height:27px; background-color:#f7941e; width:0px; transition:1s; position: absolute; top:37px; left:205px; z-index:-1;}
+#sport-faq-title .decor.animate { width:130px;}
+.sport-faq-block {text-align: center;}
+#sport-faq-wrap .toggles-wrap {margin:40px 20px 0 0;}
+.sport-faq-form .form-wrap {max-width:420px; padding:20px 50px 70px; margin:40px auto 0; background-color: #fff; height:100%; box-shadow:0 0 20px rgba(0,0,0,.4);}
+.sport-faq-form form {text-align: center;}
+.sport-faq-form h3  {position: relative; display: inline-block; margin:0; text-align: center; text-transform: uppercase; line-height: 130px;}
+.sport-faq-form h3 b {vertical-align:middle; display: inline-block; position:relative;} 
+.sport-faq-form h3 span {display: block; font-weight: 18px; letter-spacing: 5px; line-height: 30px;}
+.sport-faq-form h3 .decor {margin-left:-32px; font-style: normal; display: block; top:0; left:50%; font-weight: 700; font-size: 130px; color:#f7941e; position: absolute;}
+.sport-faq-form form .input-container label {text-transform: none; text-align: center; font-size: 16px;}
+form .input-container {max-width:none;}
+form .input-container .bar { background: #bfbebe; }
+form .input-container .bar:before, form .input-container .bar:after { background: #f7941e; }
+
+/* ============================================= */
+/* | - = - = - = - Media Styles - = - = - = -  | */
+/* ============================================= */
+
+@media screen and (max-width: 1199px) {
+	#sport-business-title .normal-letters {margin-right:20%;}
+	#sport-business-wrap .decor-bg-wrap {width:70%; right:30%; top:65px;}
+	#sport-business-wrap .decor-bg {left:0; right:auto; top:100px;}
+}
+
+@media screen and (max-width: 991px) {
+	#sport-objects-wrap {padding:60px 0 50px;}
+  .sport-object {float: none; text-align: center;}
+  #sport-object-title .decor {top:0; right:110px;}
+  .sport-object-carousel-wrap {margin:auto; float:none; width:100%;}
+  .sport-objects-presentation img, #sport-objects-col {display: none;}
+  .sport-objects-presentation {width:100%; float: none;}
+  .sport-objects-presentation figure {text-align: center;}
+  .sport-objects-presentation p {padding: 20px 10px; font-size: 16px; text-transform: none;}
+  .sport-objects-presentation a {display: inline-block; padding:5px 25px;}
+  .sport-whom-block {text-align: left;}
+  #sport-whom {padding:40px 0;}
+  #sport-you {margin-top: 50px;}
+  #sport-you-decor {display: none;}
+  .sport-you-tab {margin:20px;}
+  #sport-business {margin-top: 100px; padding-bottom:50px;}
+  #sport-business-content .toggles-wrap {margin:50px 0 0 50px;}
+  #sport-business-wrap .decor-bg {left:-130px; right:auto; bottom:250px;}
+  #sport-business-title {padding-right: 0;}
+  #sport-business-title .normal-letters {margin-right: 15%;}
+  #sport-business-wrap .decor.line.animate {width:15%;}
+  #sport-projects-title { transform:rotate(-90deg) translateY(-130px) translateX(-140px);}
+  .sport-projects-descriptions { margin-top: 10px; margin-bottom: 120px;}
+	#sport-projects-wrap .decor.line, #sport-projects-wrap .decor.col {display: none;}
+	#sport-exp-title {margin:-15px 0 0 0;}
+	#sport-faq-title {display: block; text-align: right; margin-top:0;}
+	#sport-faq-wrap .decor-bg-right {display: none;}
+	#sport-faq-wrap .decor-bg-left { top:auto; height:600px; width:95%; bottom:0;}
+	.sport-faq-block {padding:50px 0 50px 50px;}
+	.sport-faq-block .toggle-block {margin-bottom:40px;}
+	#sport-faq-wrap .decor.line {top:50px;}
+}
+
+@media screen and (max-width: 768px) {
+  #sport-objects .normal-letters {letter-spacing: 6px; font-size: 26px;}
+  #sport-objects .big-letters {line-height: 40px; padding: 0; font-size: 46px; letter-spacing: 0;}
+  #sport-you-title .big-letters {font-size:60px; }
+  #sport-objects-title .decor {right:55px;}
+  #sport-whom-title { transform: rotate(-90deg) translateX(-115px) translateY(-60px);}
+  .sport-you-tab-blocks {display: none;}
+  .sport-you-tab {margin:10px; float:none; display: inline-block;}
+  .sport-you-tabs {text-align: center;}
+  #sport-you-title {margin-left: 0; padding-left: 10px;}
+  #sport-you-title .big-letters {font-size: 60px; line-height: 60px;}
+  #sport-you-title .normal-letters {line-height: 60px; padding-left: 0; margin-left: 0;}
+  #sport-you-title .normal-letters strong {line-height: 25px; font-size: 25px; letter-spacing: 4px;}
+  #sport-you-title .decor b {right:32px;}
+  #sport-business-title .normal-letters {width:250px;margin-right: 0; font-size: 25px; letter-spacing: 4px; text-align: left;}
+  #sport-business-title .big-letters {font-size: 60px; line-height: 60px; text-align: left; letter-spacing: 10px;}
+  #sport-business-title .decor { width: 23px; top: 45px; left: -5px;}
+  #sport-business-title .decor.animate { height: 90px;}
+  #sport-business-wrap .decor.line {top:78px;}
+  #sport-business-wrap .decor.line.animate {width:70%;}
+	#sport-business .decor-bg-wrap {display: none;}
+	#sport-business-content .toggles-wrap {margin:50px 0 0 0;}
+	.sport-projects-image-2, .sport-projects-image-3 {display: none;}
+	.sport-projects-image-1 {left:15px; top:0; width:100%;}
+	.sport-projects-image-4 {top:250px; left:25px;}
+	.sport-projects-images {height:400px;}
+	.sport-projects-nav {bottom:-30px; top:auto; left:45px;}
+	#sport-projects-title .normal-letters {font-size: 25px; line-height: 25px; letter-spacing: 10px;}
+	#sport-projects-title .big-letters {font-size: 60px; line-height: 60px; letter-spacing: 9px;}
+	#sport-projects-title { transform: rotate(-90deg) translateY(-90px) translateX(-105px); }
+	#sport-projects-title .decor b {right:-20px; height:22px;}
+	#sport-projects-title .decor.animate b {width:80px;}
+	.sport-projects-descriptions {margin-bottom:30px; min-height:325px;}
+	.sport-projects-description h3 {position: absolute; bottom: -425px; right: 0; width: 45%; font-size: 18px;}
+	#sport-exp-title .normal-letters {font-size: 25px; line-height: 25px; letter-spacing: 10px;}
+	#sport-exp-title .big-letters {font-size: 60px; line-height: 60px; letter-spacing: 9px; margin-left:40px;}
+	#sport-exp-title .decor {left:80px; width:20px;}
+	#sport-exp-title .decor.animate {height:80px;}
+	#sport-projects-wrap .decor-bottom.line.animate {width:35%;}
+	#sport-faq-wrap .decor-bg-left { width:100%;}
+	#sport-faq-title .big-letters {font-size: 60px; line-height: 60px;}
+	#sport-faq-wrap .decor.line {top:20px; }
+	#sport-faq-wrap .decor.line.animate { width:25%;}
+	#sport-faq-title .decor {height:19px; left:135px; top:20px;}
+	#sport-faq-title .decor.animate {width:60px;}
+	.sport-faq-block {padding:0;}
+	.sport-faq-form .form-wrap {padding:20px 20px 70px;}
+}
+
+@media screen and (max-width: 650px) {
+	.sport-exp-carousel {width:100%; max-width:400px;}
+	.sport-exp-nav {top:100%; width:150px; margin-left:-60px; left:50%;}
+	.sport-exp-el {margin:20px 0 0;}
+}
+
+@media screen and (max-width: 600px) {
+	.sport-block-whom-el {display: block; margin:0 auto 20px;}
+	.sport-you-tab {margin:10px 0;}
+	
+}
+
+@media screen and (max-width: 500px) {
+	.sport-you-tab {display: block; margin:0px auto 20px;}
+	.sport-you-tab figcaption {width:100%; margin-top:5px;}
+	#sport-projects-title { transform: rotate(-90deg) translateY(-120px) translateX(-105px); }
+}
+
+@media screen and (max-width: 400px) {
+	#sport-whom-title { transform: rotate(-90deg) translateX(-115px) translateY(-100px);}
+}
